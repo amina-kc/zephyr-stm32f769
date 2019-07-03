@@ -71,5 +71,6 @@ void ili9340_transmit(struct ili9340_data *data, u8_t cmd, void *tx_data,
  * @param data Device data structure
  */
 void ili9340_lcd_init(struct ili9340_data *data);
+void otm8009a_init(struct device *dev);
 
 #endif /* ZEPHYR_DRIVERS_DISPLAY_DISPLAY_ILI9340_H_ */

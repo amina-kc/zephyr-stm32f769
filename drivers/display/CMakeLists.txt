@@ -8,6 +8,7 @@ zephyr_sources_ifdef(CONFIG_SDL_DISPLAY		display_sdl.c)
 zephyr_sources_ifdef(CONFIG_DUMMY_DISPLAY	display_dummy.c)
 zephyr_sources_ifdef(CONFIG_FRAMEBUF_DISPLAY	display_framebuf.c)
 zephyr_sources_ifdef(CONFIG_ILI9340		display_ili9340.c)
+zephyr_sources_ifdef(CONFIG_OTM8009A		stm32f7-otm8009a.c)
 
 zephyr_sources_ifdef(CONFIG_MICROBIT_DISPLAY
 	mb_display.c

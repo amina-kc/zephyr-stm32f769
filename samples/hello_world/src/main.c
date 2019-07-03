@@ -6,8 +6,11 @@
 
 #include <zephyr.h>
 #include <sys/printk.h>
+#include <display/stm32f7-otm8009a.h>
 
 void main(void)
-{
+{ 
 	printk("Hello World! %s\n", CONFIG_BOARD);
+	init_test();
+
 }

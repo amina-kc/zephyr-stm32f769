@@ -12,6 +12,7 @@
 #include <drivers/i2c.h>
 
 #include <display/grove_lcd.h>
+#include<display/stm32f7-otm8009a.h>
 
 /**
  * @file Display a counter through I2C and Grove LCD.
@@ -33,6 +34,7 @@ u8_t clamp_rgb(int val)
 
 void main(void)
 {
+	otm8009a_init();
 	struct device *glcd;
 	char str[20];
 	int rgb[] = { 0x0, 0x0, 0x0 };

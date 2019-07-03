@@ -1,0 +1,16 @@
+# Kconfig - OTM8009A display driver configuration options
+
+#
+# Copyright (c) 2019 Amina Kacem <aminakacem.isitcom@gmail.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+menuconfig OTM8009A
+	bool "OTM8009A display driver"
+	depends on SPI
+	depends on GPIO
+	help
+	Enable driver for OTM8009A display driver.
+
+ #OTM8009A
