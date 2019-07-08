@@ -51,4 +51,8 @@ config ETH_STM32_HAL
 
 endif # NETWORKING
 
+config DSI_TE_EXTERNAL
+	bool "DSI TE External"
+	default n
+
 endif # BOARD_STM32F769I_DISCO

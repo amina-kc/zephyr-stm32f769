@@ -28,6 +28,7 @@ config USE_STM32_HAL_COMP
 
 config USE_STM32_HAL_CORTEX
 	bool
+	default y
 
 config USE_STM32_HAL_CRC
 	bool
@@ -61,15 +62,19 @@ config USE_STM32_HAL_DFSDM_EX
 
 config USE_STM32_HAL_DMA
 	bool
+	default y
 
 config USE_STM32_HAL_DMA2D
 	bool
+	default y
 
 config USE_STM32_HAL_DMA_EX
 	bool
+	default y
 
 config USE_STM32_HAL_DSI
 	bool
+	default y
 
 config USE_STM32_HAL_ETH
 	bool
@@ -97,9 +102,11 @@ config USE_STM32_HAL_GFXMMU
 
 config USE_STM32_HAL_GPIO
 	bool
+	default y
 
 config USE_STM32_HAL_GPIO_EX
 	bool
+	default y
 
 config USE_STM32_HAL_HASH
 	bool
@@ -139,15 +146,18 @@ config USE_STM32_HAL_JPEG
 
 config USE_STM32_HAL_LCD
 	bool
+	default y
 
 config USE_STM32_HAL_LPTIM
 	bool
 
 config USE_STM32_HAL_LTDC
 	bool
+	default y
 
 config USE_STM32_HAL_LTDC_EX
 	bool
+	default y
 
 config USE_STM32_HAL_MDIOS
 	bool
@@ -190,9 +200,11 @@ config USE_STM32_HAL_QSPI
 
 config USE_STM32_HAL_RCC
 	bool
+	default y
 
 config USE_STM32_HAL_RCC_EX
 	bool
+	default y
 
 config USE_STM32_HAL_RNG
 	bool
@@ -220,7 +232,8 @@ config USE_STM32_HAL_SDADC
 
 config USE_STM32_HAL_SDRAM
 	bool
-
+	default y
+	
 config USE_STM32_HAL_SMARTCARD
 	bool
 
@@ -235,12 +248,15 @@ config USE_STM32_HAL_SPDIFRX
 
 config USE_STM32_HAL_SPI
 	bool
+	default y
 
 config USE_STM32_HAL_SPI_EX
 	bool
+	default y
 
 config USE_STM32_HAL_SRAM
 	bool
+	default y
 
 config USE_STM32_HAL_SWPMI
 	bool
@@ -286,27 +302,34 @@ config USE_STM32_LL_DAC
 
 config USE_STM32_LL_DMA
 	bool
+	default y
 
 config USE_STM32_LL_DMA2D
 	bool
+	default y
 
 config USE_STM32_LL_EXTI
 	bool
+	default y
 
 config USE_STM32_LL_FMC
 	bool
+	default y
 
 config USE_STM32_LL_FSMC
 	bool
+	default y
 
 config USE_STM32_LL_GPIO
 	bool
+	default y
 
 config USE_STM32_LL_HRTIM
 	bool
 
 config USE_STM32_LL_I2C
 	bool
+	default y
 
 config USE_STM32_LL_IPCC
 	bool
@@ -325,6 +348,7 @@ config USE_STM32_LL_PWR
 
 config USE_STM32_LL_RCC
 	bool
+	default y
 
 config USE_STM32_LL_RNG
 	bool
@@ -337,6 +361,7 @@ config USE_STM32_LL_SDMMC
 
 config USE_STM32_LL_SPI
 	bool
+	default y
 
 config USE_STM32_LL_SWPMI
 	bool
@@ -353,4 +378,43 @@ config USE_STM32_LL_USB
 config USE_STM32_LL_UTILS
 	bool
 
+config USE_STM32_LCD_DRIVER
+	bool
+	default y
+
+config USE_STM32_F769
+	bool
+	default y
+
+config  USE_STM32_SDRAM
+	bool
+	default y
+
+config USE_STM32_FONT8
+	bool
+	default y
+
+config USE_STM32_FONT12
+	bool
+	default y
+
+config USE_STM32_FONT16
+	bool
+	default y
+
+config USE_STM32_FONT20
+	bool
+	default y
+
+config USE_STM32_FONT24
+	bool
+	default y
+
+config USE_STM32_ADV
+	bool
+	default y
+
+config USE_STM32_LCD
+	bool
+	default y
 endif

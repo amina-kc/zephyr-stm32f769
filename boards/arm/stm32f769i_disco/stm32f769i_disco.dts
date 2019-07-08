@@ -36,6 +36,7 @@
 			gpios = <&gpiod 4 GPIO_INT_ACTIVE_HIGH>;
 			label = "User LD4";
 		};
+		
 	};
 
 	gpio_keys {
@@ -45,12 +46,26 @@
 			gpios = <&gpioa 0 GPIO_INT_ACTIVE_HIGH>;
 		};
 	};
+        
+/* ********** pinout of the otm8009a diplay Reset gpio ************** */
+	reset_display {
+		compatible = "gpio-leds";
+		lcd_reset_pin: pinout {
+			label = "OTM8009A RESET GPIO";
+			gpios = <&gpioj 15 GPIO_INT_ACTIVE_HIGH>;
+		};
+	};
+
+/* ***************************************************************** */        
 
 	aliases {
 		led0 = &red_led_1;
 		led1 = &green_led_2;
 		led2 = &green_led_3;
 		led3 = &red_led_4;
+	/* This is for the otma8009a reset gpio */ 
+		otmReset=&lcd_reset_pin;
+	/* ************************************* */
 		sw0 = &user_button;
 	};
 };
@@ -58,6 +73,7 @@
 arduino_i2c: &i2c1 {};
 arduino_spi: &spi2 {};
 arduino_serial: &usart6 {};
+
 
 &usart1 {
 	current-speed = <115200>;
@@ -79,3 +95,8 @@ arduino_serial: &usart6 {};
 &spi2 {
 	status = "okay";
 };
+
+
+
+
+
