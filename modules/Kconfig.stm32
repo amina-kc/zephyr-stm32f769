@@ -414,7 +414,4 @@ config USE_STM32_ADV
 	bool
 	default y
 
-config USE_STM32_LCD
-	bool
-	default y
 endif
